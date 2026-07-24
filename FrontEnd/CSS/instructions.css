@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #1e2130;
+}
+
+.instructions-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.instructions-card {
+    background: #fff;
+    max-width: 520px;
+    width: 100%;
+    padding: 40px 36px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.badge {
+    display: inline-block;
+    background: #eef0ff;
+    color: #4a5df9;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.instructions-card h2 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.instructions-card .subtitle {
+    color: #6b7086;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.rules-list {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f1f7;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a4f63;
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rules-list li i {
+    color: #4a5df9;
+    font-size: 15px;
+    width: 20px;
+    margin-top: 2px;
+}
+
+.rules-list li strong {
+    color: #1e2130;
+}
+
+.instructions-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.instructions-actions button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #e2e5f0;
+    color: #1e2130;
+}
+
+.btn-primary {
+    background: #4a5df9;
+    color: #fff;
+}

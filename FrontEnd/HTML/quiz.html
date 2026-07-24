@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz System</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="stylesheet" href="../CSS/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <div class="quiz-topbar">
+            <div class="quiz-meta">
+                <h2 id="quizTitle">Course - Level</h2>
+                <p id="quizSubtitle">Question 1 of 10</p>
+            </div>
+
+            <div class="timer-box" id="timerBox">
+                <i class="fa-regular fa-clock"></i>
+                <span id="timerDisplay">10:00</span>
+            </div>
+        </div>
+
+        <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+
+        <div class="question-card" id="questionCard">
+            <p>Loading questions...</p>
+        </div>
+
+        <div class="quiz-nav">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" onclick="confirmSubmit()">Submit Test</button>
+        </div>
+
+    </div>
+
+    <!-- Confirm submit modal -->
+    <div class="modal-overlay" id="confirmModal">
+        <div class="modal-box">
+            <h3>Submit Test?</h3>
+            <p id="confirmText">You have answered <span id="answeredCount">0</span> of 10 questions. Submit now?</p>
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn-primary" onclick="submitQuiz(false)">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/quiz.js"></script>
+
+</body>
+
+</html>

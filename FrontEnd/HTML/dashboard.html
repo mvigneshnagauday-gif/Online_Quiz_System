@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h3>Quiz System</h3>
+
+            <ul>
+                <li class="active" onclick="navigate('dashboard')">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li onclick="navigate('progress')">
+                    <i class="fa-solid fa-chart-line"></i>
+                    My Progress
+                </li>
+
+                <li onclick="navigate('results')">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </li>
+
+                <li onclick="navigate('leaderboard')">
+                    <i class="fa-solid fa-trophy"></i>
+                    Leaderboard
+                </li>
+
+                <li onclick="navigate('profile')">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </li>
+
+                <li onclick="logout()">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="header">
+
+                <div>
+                    <h1>Hi, <span id="userGreeting">Vignesh</span>! 👋</h1>
+                    <p>Choose a course to start learning</p>
+                </div>
+
+                <div class="header-icons">
+                    <i class="fa-regular fa-bell"></i>
+
+                    <i class="fa-solid fa-circle-user profile"></i>
+                </div>
+
+            </div>
+
+            <div class="courses">
+
+                <div class="course-card" data-course="Java" onclick="openCourse('Java')">
+                    <i class="fa-brands fa-java course-icon"></i>
+                    <h3>Java</h3>
+                    <p>3 Levels</p>
+                    <span>Start Now →</span>
+                </div>
+
+                <div class="course-card" data-course="Python" onclick="openCourse('Python')">
+                    <i class="fa-brands fa-python course-icon"></i>
+                    <h3>Python</h3>
+                    <p>3 Levels</p>
+                    <span>Start Now →</span>
+                </div>
+
+                <div class="course-card" data-course="C++" onclick="openCourse('C++')">
+                    <i class="fa-solid fa-code course-icon"></i>
+                    <h3>C++</h3>
+                    <p>3 Levels</p>
+                    <span>Start Now →</span>
+                </div>
+
+                <div class="course-card" data-course="Database" onclick="openCourse('Database')">
+                    <i class="fa-solid fa-database course-icon"></i>
+                    <h3>Database</h3>
+                    <p>3 Levels</p>
+                    <span>Start Now →</span>
+                </div>
+
+                <div class="course-card" data-course="Spring Boot" onclick="openCourse('Spring Boot')">
+                    <i class="fa-solid fa-leaf course-icon"></i>
+                    <h3>Spring Boot</h3>
+                    <p>3 Levels</p>
+                    <span>Start Now →</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/dashboard.js"></script>
+
+</body>
+
+</html>
