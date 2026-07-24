@@ -1,6 +1,4 @@
-
-const API_BASE = "http://localhost:8080/api";
-
+const API_BASE = "https://online-quiz-system-1-jsno.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", () => {
     loadUserInfo();
